@@ -106,7 +106,7 @@ set -e
 
 	sleep 3s
 
-	sudo apt install bspwm sxhkd mate-polkit feh nitrogen lxappearance flameshot compton dunst numlockx libnotify-bin playerctl -y
+	sudo apt install bspwm sxhkd mate-polkit feh nitrogen lxappearance flameshot compton dunst numlockx libnotify-bin playerctl peek -y
 	
 	clear
 	
@@ -120,15 +120,18 @@ set -e
 
 	clear
 	echo "# Base BSPWM instalada #"
-	echo "# Instalar ksuperkey #"
+	echo "# Instalacoes snap #"
 	
 	sleep 3s
 
-	sudo apt install snapd -y && sudo snap install ksuperkey
+	sudo apt install snapd -y
+	sudo snap install ksuperkey
+	sudo snap install guiscrcpy
+	sudo snap install photogimp
 
 	clear
 
-	echo "# ksuperkey instalado #"
+	echo "# pacotes snaps instalados #"
 	echo "# Sistema atualizado #"
 	echo "# Base BSPWM instalada #"	
 	echo "# Apps complementares instalados #"
